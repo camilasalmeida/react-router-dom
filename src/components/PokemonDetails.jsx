@@ -1,8 +1,9 @@
 // src/components/PokemonDetails.jsx or Details of a single pokemon.
+
 import { useParams } from 'react-router-dom'
 
 const PokemonDetails = (props) => {
-  console.log(props)                          // Always verify that any props are being passed correctly!
+  console.log(props)                        // Always verify that any props are being passed correctly!
   const { pokemonId } = useParams()                                                           // Will extract the pokemonId from the URL.
   const singlePokemon = props.pokemon.find((poke) => poke._id === Number(pokemonId))         // Find a specific pokemon in the props.pokemon array using the extrated pokemonId.
   console.log('pokemonId is: ', pokemonId )                                                  // Using Number to convert the pokemonId from a String to a number.
@@ -22,6 +23,7 @@ const PokemonDetails = (props) => {
 }
 
 export default PokemonDetails
+
 
 /* 
 <dt> and <dd> are used together to define description lists (also known as definition lists). These elements are part of a pair that helps structure and display information in a key-value or term-definition format.

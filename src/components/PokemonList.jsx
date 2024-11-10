@@ -1,11 +1,9 @@
 import { Link } from 'react-router-dom'
 
-
-
 const PokemonList = (props) => {
   return (
     <>
-      <h2>Pokemon List: </h2>
+      <h2>🔥 Pokemon List: </h2>
       <ul>
         {props.pokemon.map((currentPokemon) => (
           <li key={currentPokemon.name}>
