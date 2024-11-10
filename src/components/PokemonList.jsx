@@ -12,3 +12,4 @@ const PokemonList = (props) => {
 }
 
 export default PokemonList
+
